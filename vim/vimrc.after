@@ -1,0 +1,59 @@
+" Some helpers to edit mode
+" http://vimcasts.org/e/14
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
+" use node for javascript
+let $JS_CMD='node'
+
+" apertium xml files
+au BufRead,BufNewFile *.{dix,metadix,t1x}    set ft=xml
+
+" arrow keys are for little kids
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+" some annoyances with capital letters
+nmap :Q :q
+nmap :W :w
+
+" vim-gist options
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+
+" overwrite TComment map to go down a line
+map <D-/> :TComment<CR>j
+
+" include matcher configuration for ctrlp
+source ~/.vimrc_matcher
+
+" open NERDTree tabs on GUI startup
+let g:nerdtree_tabs_open_on_gui_startup = 1
+
+" Disabling neocomplcache for python
+" Because of this stupid issue that happens for me with Pygame:
+" http://git.io/yQZqYA
+let g:neocomplcache_omni_patterns['python'] = " "
+
+" Some more python customizations :/
+" stolen from http://j.mp/LMtnB7
+" TODO should be replaced with http://www.vim.org/scripts/script.php?script_id=974
+" explanation here http://henry.precheur.org/vim/python
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
+autocmd BufWritePre *.py set textwidth=120
+autocmd BufRead *.py set tabstop=4
+autocmd BufRead *.py set softtabstop=4
+autocmd BufRead *.py set shiftwidth=4
+
+" Some C customizations :(
+au BufRead,BufNewFile *.py set expandtab
+au BufRead,BufNewFile *.c set noexpandtab
+au BufRead,BufNewFile *.h set noexpandtab
+au BufRead,BufNewFile Makefile* set noexpandtab
+
