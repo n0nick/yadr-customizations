@@ -5,7 +5,6 @@
 
 # define your own aliases or override those provided by YADR.
 # alias ls='ls -lAhFG'
-alias ls='ls -Fh --color=auto'
 alias hosts='sudo vim /private/etc/hosts'
 
 # Automatically cd to frequently used directories http://robots.thoughtbot.com/post/10849086566/cding-to-frequently-used-directories-in-zsh
