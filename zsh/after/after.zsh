@@ -28,3 +28,6 @@ alias vi=vim
 alias t="~/.t --task-dir ~/tasks --list tasks"
 alias tg='~/.t --task-dir $(git rev-parse --show-toplevel 2>/dev/null || echo ".") --list TODO'
 
+# Tell git to use new vim
+export GIT_EDITOR=$(brew ls macvim | grep Contents/MacOS/Vim)
+
