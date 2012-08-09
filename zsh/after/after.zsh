@@ -31,3 +31,5 @@ alias tg='~/.t --task-dir $(git rev-parse --show-toplevel 2>/dev/null || echo ".
 # Tell git to use new vim
 export GIT_EDITOR=$(brew ls macvim | grep Contents/MacOS/Vim)
 
+# Help C++ find the new X11 libs
+export CPPFLAGS=-I/opt/X11/include
