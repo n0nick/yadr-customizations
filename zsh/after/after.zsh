@@ -21,3 +21,6 @@ eval "$(fasd --init auto)"
 alias j="fasd_cd -d" # 'j'ump makes more sense than 'z'
 alias o='a -e open'
 
+# Vi/vim stickiness
+alias vi=vim
+
