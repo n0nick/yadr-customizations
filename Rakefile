@@ -11,8 +11,10 @@ task :install do
     run "ln -s #{file} #{File.join(home, ".#{File.basename(file)}")}"
   end
 
-  # zsh custom folder
-  run "ln -s #{File.join(pwd, "zsh")} #{File.join(home, ".yadr", "custom", "zsh")}"
+  # zsh custom folders
+  %w(before after).each do |f|
+    run "ln -s #{File.join(pwd, "zsh/#{f}")} #{File.join(home, ".zsh.#{f}")}"
+  end
 
   # zsh prompt files
   Dir[File.join(pwd, "zsh", "prompt", "*")].each do |file|
@@ -31,8 +33,10 @@ task :uninstall do
     run "rm #{File.join(home, ".#{File.basename(file)}")}"
   end
 
-  # zsh custom folder
-  run "rm #{File.join(home, ".yadr", "custom", "zsh")}"
+  # zsh custom folders
+  %w(before after).each do |f|
+    run "rm #{File.join(home, ".zsh.#{f}")}"
+  end
 
   # zsh prompt files
   Dir[File.join(pwd, "zsh", "prompt", "*")].each do |file|
