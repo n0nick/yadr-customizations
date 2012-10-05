@@ -58,7 +58,7 @@ function prompt_n0nick_setup {
   fi
 
   # Enable VCS systems you use.
-  zstyle ':vcs_info:*' enable bzr git hg svn
+  zstyle ':vcs_info:*' enable git hg svn
 
   # check-for-changes can be really slow.
   # You should disable it if you work with large repositories.
