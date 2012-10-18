@@ -16,6 +16,7 @@ alias gmv="git mv"
 alias gcl="git clone"
 alias gcb="git checkout -b"
 alias gbr="git branch -r"
+alias gpst="git push --tags"
 
 # Some powder aliases
 alias pd="powder"
