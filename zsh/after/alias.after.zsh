@@ -16,3 +16,11 @@ alias gmv="git mv"
 alias gcl="git clone"
 alias gcb="git checkout -b"
 alias gbr="git branch -r"
+
+# Some powder aliases
+alias pd="powder"
+alias pdr="powder restart"
+alias pdu="powder up"
+alias pdd="powder down"
+alias pdo="powder open"
+alias pdl="powder link"
