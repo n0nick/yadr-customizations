@@ -17,6 +17,7 @@ alias gcl="git clone"
 alias gcb="git checkout -b"
 alias gbr="git branch -r"
 alias gpst="git push --tags"
+alias gcom="git checkout master"
 
 # Some powder aliases
 alias pd="powder"
