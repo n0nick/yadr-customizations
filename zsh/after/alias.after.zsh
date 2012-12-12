@@ -32,3 +32,6 @@ alias pdl="powder link"
 
 # Gist is jist
 alias gist="jist"
+
+# Edit this file
+alias aliases="vim ~/dev/personal/yadr-customizations/zsh/after/alias.after.zsh"
