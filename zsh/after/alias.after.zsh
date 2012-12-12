@@ -35,3 +35,6 @@ alias gist="jist"
 
 # Edit this file
 alias aliases="vim ~/dev/personal/yadr-customizations/zsh/after/alias.after.zsh"
+
+# Some tmux shortcuts
+alias tn="tmux new-window"
