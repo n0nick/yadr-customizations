@@ -30,5 +30,5 @@ alias pdd="powder down"
 alias pdo="powder open"
 alias pdl="powder link"
 
-# Gist is just
+# Gist is jist
 alias gist="jist"
