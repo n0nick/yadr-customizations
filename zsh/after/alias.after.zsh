@@ -16,8 +16,11 @@ alias gmv="git mv"
 alias gcl="git clone"
 alias gcb="git checkout -b"
 alias gbr="git branch -r"
+alias gbd="git branch -D"
 alias gpst="git push --tags"
 alias gcom="git checkout master"
+alias gap="git add -p"
+alias gcia="git commit --amend"
 
 # Some powder aliases
 alias pd="powder"
