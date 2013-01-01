@@ -59,3 +59,8 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 
 " prefer jshint for javascript syntax checking
 let g:syntastic_javascript_syntax_checker="jshint"
+
+" Conque bottom panel
+nnoremap <Leader>` :ConqueTermSplit zsh<CR>
+nnoremap <silent> <Leader>[ :exe "resize " . (&lines * 3/4)<CR>
+nnoremap <silent> <Leader>] :exe "resize " . (&lines * 1/4)<CR>
