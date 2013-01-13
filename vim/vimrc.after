@@ -75,3 +75,5 @@ map <Leader>r :call VimuxRunCommand('rspec ' . @%)<CR>
 map <Leader>R :call VimuxRunCommand('rspec ' . @% . ':' . line('.'))<CR>
 map <Leader>\ :VimuxRunLastCommand<cr>
 
+" Enable mouse mode (on terminal vim, too)
+set mouse=a
