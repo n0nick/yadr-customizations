@@ -78,4 +78,8 @@ map <Leader>\ :VimuxRunLastCommand<cr>
 " Enable mouse mode (on terminal vim, too)
 set mouse=a
 
+" Copy to clipboard
 vmap <Leader>y "*y
+
+" Refresh chrome (w/out focus)
+nnoremap <silent> <Leader>r :<C-u>silent !osascript -e 'tell application "Google Chrome" to tell the active tab of its first window to reload'<CR>:redraw!<CR>
