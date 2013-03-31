@@ -66,14 +66,14 @@ let g:syntastic_javascript_syntax_checker="jshint"
 " nnoremap <silent> <Leader>] :exe "resize " . (&lines * 1/4)<CR>
 
 " Vimux stuff
-let g:VimuxOrientation = "h"
-let g:VimuxHeight = "40"
-command! RailsConsole :call VimuxRunCommand('RAILS_ENV=test rails c')
-command! W :w | :call VimuxRunCommand("load '" . @% ."';")
-map <Leader>c :RailsConsole<CR>
-map <Leader>r :call VimuxRunCommand('rspec ' . @%)<CR>
-map <Leader>R :call VimuxRunCommand('rspec ' . @% . ':' . line('.'))<CR>
-map <Leader>\ :VimuxRunLastCommand<cr>
+"let g:VimuxOrientation = "h"
+"let g:VimuxHeight = "40"
+"command! RailsConsole :call VimuxRunCommand('RAILS_ENV=test rails c')
+"command! W :w | :call VimuxRunCommand("load '" . @% ."';")
+"map <Leader>c :RailsConsole<CR>
+"map <Leader>r :call VimuxRunCommand('rspec ' . @%)<CR>
+"map <Leader>R :call VimuxRunCommand('rspec ' . @% . ':' . line('.'))<CR>
+"map <Leader>\ :VimuxRunLastCommand<cr>
 
 " Enable mouse mode (on terminal vim, too)
 set mouse=a
