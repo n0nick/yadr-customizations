@@ -32,6 +32,12 @@ task :install do
       #{File.join(prompts, "prompt_#{File.basename(file)}_setup")}"
   end
   puts ""
+
+  puts "Zsh profile file"
+  source = File.join(pwd, "zsh", "zprofile")
+  target = File.join(home, ".zprofile")
+  run "ln -s #{source} #{target}"
+  puts ""
 end
 
 desc "Uninstalls the customizations by removing the symbolic links created"
@@ -56,6 +62,10 @@ task :uninstall do
   Dir[File.join(pwd, "zsh", "prompt", "*")].each do |file|
     run "rm #{File.join(home, ".zsh.prompts", "prompt_#{File.basename(file)}_setup")}"
   end
+  puts ""
+
+  puts "Zsh profile file"
+  run "rm #{File.join(home, ".zprofile")}"
   puts ""
 end
 
