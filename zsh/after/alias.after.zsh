@@ -42,3 +42,6 @@ alias tmux="tmux -u"
 
 # Bundler shortcuts
 alias bdi="bundle install"
+
+# Open file with Mou
+alias mou="open -a Mou"
