@@ -83,3 +83,8 @@ vmap <Leader>y "*y
 
 " Refresh chrome (w/out focus)
 nnoremap <silent> <Leader>r :<C-u>silent !osascript -e 'tell application "Google Chrome" to tell the active tab of its first window to reload'<CR>:redraw!<CR>
+
+" More natural split opening
+" http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+set splitbelow
+set splitright
