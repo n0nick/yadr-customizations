@@ -45,3 +45,13 @@ alias bdi="bundle install"
 
 # Open file with Mou
 alias mou="open -a Mou"
+
+# Shaft
+function _quickshaft() {
+  if (( $# == 0)); then
+    shaft stop --all
+  else
+    shaft start $1
+  fi
+}
+alias ss=_quickshaft
