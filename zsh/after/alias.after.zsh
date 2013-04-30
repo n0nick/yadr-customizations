@@ -55,3 +55,10 @@ function _quickshaft() {
   fi
 }
 alias ss=_quickshaft
+
+# Rails tasks
+alias rc="rails console"
+alias rac="rake assets:clean"
+alias r18="rake i18n:js:export"
+alias rds="rake debug:start"
+alias rdc="rake debug:connect"
