@@ -1,1 +1,1 @@
-prompt n0nick
+prompt pure
