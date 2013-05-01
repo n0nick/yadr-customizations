@@ -78,7 +78,8 @@ let g:syntastic_javascript_syntax_checker="jshint"
 " Enable mouse mode (on terminal vim, too)
 set mouse=a
 
-" Copy to clipboard
+" Clipboard stuff
+"set clipboard=unnamed " this copies to OS's clipboard
 vmap <Leader>y "*y
 
 " Refresh chrome (w/out focus)
@@ -88,3 +89,6 @@ nnoremap <silent> <Leader>r :<C-u>silent !osascript -e 'tell application "Google
 " http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
 set splitbelow
 set splitright
+
+" Fix key mapping conflict with Sparkup
+let g:sparkupNextMapping = '<c-r>'
