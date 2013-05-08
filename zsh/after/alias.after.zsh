@@ -50,9 +50,8 @@ alias mou="open -a Mou"
 
 # Shaft
 function _quickshaft() {
-  if (( $# == 0)); then
-    shaft stop --all
-  else
+  shaft stop --all
+  if (( $# != 0)); then
     shaft start $1
   fi
 }
