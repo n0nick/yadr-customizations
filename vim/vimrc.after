@@ -92,3 +92,6 @@ set splitright
 
 " Fix key mapping conflict with Sparkup
 let g:sparkupNextMapping = '<c-r>'
+
+" Speed up git-gutter
+let g:gitgutter_eager = 0
