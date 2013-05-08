@@ -37,8 +37,10 @@ alias gist="jist"
 alias aliases="vim ~/dev/personal/yadr-customizations/zsh/after/alias.after.zsh"
 
 # Some tmux shortcuts
-alias tn="tmux new-window"
 alias tmux="tmux -u"
+alias tn="tmux new-window"
+alias ta="tmux attach"
+alias td="tmux detach"
 
 # Bundler shortcuts
 alias bdi="bundle install"
