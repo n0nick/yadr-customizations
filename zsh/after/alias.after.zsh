@@ -41,6 +41,7 @@ alias tmux="tmux -u"
 alias tn="tmux new-window"
 alias ta="tmux attach"
 alias td="tmux detach"
+alias tl="tmux list-sessions"
 
 # Bundler shortcuts
 alias bdi="bundle install"
