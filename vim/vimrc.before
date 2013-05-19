@@ -1,1 +1,5 @@
-" Before configs go here
+" Force using a POSIX shell
+if $SHELL =~ 'fish'
+  set shell=/bin/sh
+endif
+
