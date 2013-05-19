@@ -46,7 +46,9 @@ alias td="tmux detach"
 alias bdi="bundle install"
 
 # Open file with Mou
-alias mou="open -a Mou"
+function mou() {
+  touch $1 && open -a Mou $1
+}
 
 # Shaft
 function _quickshaft() {
